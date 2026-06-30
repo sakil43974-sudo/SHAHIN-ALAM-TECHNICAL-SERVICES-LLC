@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHAHIN ALAM TECHNICAL SERVICES LLC | Premium AC & HVAC Solutions Dubai UAE</title>
+    <script>
+      // Prevent "Cannot set property fetch of #<Window> which has only a getter" in iframe sandbox platform proxies
+      (function() {
+        try {
+          var currentFetch = window.fetch;
+          function overrideFetch(target) {
+            try {
+              Object.defineProperty(target, 'fetch', {
+                configurable: true,
+                enumerable: true,
+                get: function() {
+                  return currentFetch;
+                },
+                set: function(value) {
+                  currentFetch = value;
+                }
+              });
+              return true;
+            } catch (e) {
+              return false;
+            }
+          }
+          if (!overrideFetch(window)) {
+            overrideFetch(Window.prototype);
+          }
+        } catch (e) {
+          console.warn('Sandbox fetch setter bypass failed in head:', e);
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-[#020617] text-[#e6f1ff]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
