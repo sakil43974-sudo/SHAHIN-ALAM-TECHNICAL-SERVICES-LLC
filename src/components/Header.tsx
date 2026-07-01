@@ -97,7 +97,7 @@ export default function Header() {
             {/* Social Channels */}
             <div className="hidden sm:flex items-center gap-1.5 border-l border-slate-800 pl-4 pr-1 flex-shrink-0">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/profile.php?id=61578850880770" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="w-5 h-5 rounded bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors"
