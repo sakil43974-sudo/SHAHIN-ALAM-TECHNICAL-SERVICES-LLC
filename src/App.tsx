@@ -20,25 +20,25 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import { OFFICE_CONTACTS } from './data';
 
-// High-quality professional HVAC & Chiller slider images representing Shahin Alam Technical Services LLC projects
+// High-quality professional technical & maintenance slider images representing Shahin Alam Technical Services LLC projects
 const HERO_SLIDES = [
   {
     image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80',
-    tag: 'INDUSTRIAL CHILLERS & HEAVY CENTRAL HVAC',
-    title: 'Enterprise Cooling Engineering',
-    desc: 'Bespoke central VRF systems and industrial-grade water chillers engineered for continuous high-load GCC climates.'
+    tag: 'APPROVED DUBAI DED TECHNICAL CONTRACTOR',
+    title: 'Elite HVAC & Air Engineering',
+    desc: 'Expert central VRF/VRV systems, chillers, ventilation, and air filtration installations engineered for pristine cooling under extreme GCC temperatures.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80',
-    tag: 'PRECISION DUCT FABRICATION & PRESSURE BALANCING',
-    title: 'Custom Airflow Solutions',
-    desc: 'High-performance double-insulated sheet metal ductwork design, vacuum sanitization, and meticulous air velocity balancing.'
+    image: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1600&q=80',
+    tag: 'SWIMMING POOLS & SANITARY INSTALLATION',
+    title: 'Precision Plumbing & Pools',
+    desc: 'Comprehensive swimming pool installations, high-pressure water pump integration, sanitary pipe repairs, and flawless leak troubleshooting.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1600&q=80',
-    tag: 'GOLD-STANDARD RESIDENTIAL AC INSTALS & CHEMICAL FLUSH',
-    title: 'Elite Architectural Comfort',
-    desc: 'Bespoke linear slot air diffusers and ultra-quiet split-unit chemistry cleaning, maintaining pristine indoor air quality indexes.'
+    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80',
+    tag: 'INTERIOR FIT-OUTS & MASONRY CONTRACTING',
+    title: 'Master Carpentry & Finishes',
+    desc: 'Bespoke wood flooring, false ceilings, partition fixing, professional painting, plastering, and premium wallpaper fixing.'
   }
 ];
 
@@ -49,7 +49,7 @@ export default function App() {
   // Lead dispatch console states
   const [callbackName, setCallbackName] = useState('');
   const [callbackPhone, setCallbackPhone] = useState('');
-  const [callbackService, setCallbackService] = useState('AC Maintenance');
+  const [callbackService, setCallbackService] = useState('Air-Conditioning, Ventilation & Air Filtration');
   const [callbackSuccess, setCallbackSuccess] = useState(false);
 
   // Automatic slide rotation every 5 seconds
@@ -140,7 +140,7 @@ export default function App() {
             >
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping flex-shrink-0" />
               <span className="text-[8px] min-[360px]:text-[9px] sm:text-[10px] font-mono tracking-widest text-amber-400 uppercase font-bold leading-normal break-words">
-                24/7 HVAC EMERGENCY SERVICE • DUBAI DED LICENSE
+                24/7 ELITE TECHNICAL SERVICES • DUBAI DED LICENSE
               </span>
             </motion.div>
 
@@ -180,7 +180,7 @@ export default function App() {
             {/* Buttons for Call to Action */}
             <div className="flex flex-wrap gap-4 pt-4">
               <button
-                onClick={() => handleTriggerBooking('AC Maintenance')}
+                onClick={() => handleTriggerBooking('Air-Conditioning, Ventilation & Air Filtration')}
                 className="px-7 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 font-display font-bold text-sm tracking-wide shadow-xl shadow-amber-500/20 hover:shadow-amber-400/30 active:scale-95 transition-all cursor-pointer flex items-center gap-2"
               >
                 Book Service Catalog
@@ -204,7 +204,7 @@ export default function App() {
               </div>
               <div>
                 <span className="text-sm min-[380px]:text-base font-mono font-black text-amber-400">15+</span>
-                <p className="text-[9px] text-slate-400 font-mono tracking-wider uppercase mt-0.5">HVAC Specialists</p>
+                <p className="text-[9px] text-slate-400 font-mono tracking-wider uppercase mt-0.5">Specialists On Duty</p>
               </div>
               <div>
                 <span className="text-sm min-[380px]:text-base font-mono font-black text-amber-400">98.4%</span>
@@ -245,11 +245,13 @@ export default function App() {
                       onChange={(e) => setCallbackService(e.target.value)}
                       className="w-full bg-slate-900 border border-slate-800 text-slate-200 rounded-xl px-3 py-2.5 text-xs focus:outline-none focus:border-amber-500"
                     >
-                      <option value="AC Maintenance">AC Chemical Deep Clean</option>
-                      <option value="AC Installation">New AC / VRF Installation</option>
-                      <option value="AC Repair">Compressor & Gas Leak Repair</option>
-                      <option value="Ductwork Solutions">Duct Fabrication & Duct Vacuum</option>
-                      <option value="Commercial Service">Corporate SLA Chiller Service</option>
+                      <option value="Air-Conditioning, Ventilation & Air Filtration">Air-Conditioning & HVAC Works</option>
+                      <option value="Swimming Pools Installation Works">Swimming Pools Installation</option>
+                      <option value="Sanitary Installation & Pipes Repairing">Sanitary & Pipes Repairing</option>
+                      <option value="Carpentry & Wood Flooring Works">Carpentry & Wood Flooring</option>
+                      <option value="Painting Contracting">Painting Contracting</option>
+                      <option value="Floor & Wall Tiling Works">Floor & Wall Tiling</option>
+                      <option value="False Ceiling & Light Partitions Installation">False Ceilings & Partitions</option>
                     </select>
                   </div>
 

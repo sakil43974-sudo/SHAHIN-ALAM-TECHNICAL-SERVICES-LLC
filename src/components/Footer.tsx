@@ -48,11 +48,11 @@ export default function Footer() {
           <Logo variant="full" iconSize={55} />
 
           <p className="text-xs text-slate-400 leading-relaxed">
-            The UAE's premier provider of smart split, ducted and VRF/VRV central AC engineering solutions. Combining meticulous high-end craftsmanship with reliable, eco-safe performance audits.
+            The UAE's premier provider of multi-disciplinary maintenance, contracting, and technical solutions. Combining meticulous high-end craftsmanship with reliable, officially certified compliance audits.
           </p>
 
           <div className="flex flex-wrap gap-2">
-            {['Inverter V Tech', 'R32 Eco Certified', 'HVAC GCC Standard'].map((tag, idx) => (
+            {['License No: 1283230', 'DCCI: 691917', 'Dubai DET Registered'].map((tag, idx) => (
               <span key={idx} className="text-[9px] font-mono text-slate-400 bg-slate-900 border border-slate-800/80 px-2.5 py-1 rounded-md">
                 {tag}
               </span>
@@ -84,27 +84,27 @@ export default function Footer() {
 
         {/* Technical help guidelines */}
         <div className="md:col-span-3 flex flex-col gap-4 text-left">
-          <h4 className="text-xs font-mono text-amber-400 tracking-widest uppercase font-bold">HVAC Scope Coverage</h4>
+          <h4 className="text-xs font-mono text-amber-400 tracking-widest uppercase font-bold">Licensed Scope</h4>
           <ul className="space-y-2 text-sm text-slate-400">
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-amber-400" />
-              <span>AC Gas Refilling & Repairs</span>
+              <span>AC & HVAC Engineering</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-amber-400" />
-              <span>Chilled Water Leak Seals</span>
+              <span>Swimming Pools Works</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-amber-400" />
-              <span>Compressor Overhauls</span>
+              <span>Sanitary & Pipes Repairing</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-amber-400" />
-              <span>Deep-sanitization Chemical Flush</span>
+              <span>Carpentry & Floor Works</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-amber-400" />
-              <span>Commercial VRV Maintenance</span>
+              <span>Wallpaper, Painting & Tiling</span>
             </li>
           </ul>
         </div>
@@ -133,11 +133,11 @@ export default function Footer() {
       {/* Copyright notes */}
       <div className="border-t border-slate-900 bg-slate-950/70 py-6 text-center relative z-10">
         <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-between items-center gap-4 text-xs text-slate-500 font-mono">
-          <p>© {currentYear} Shahin Alam Technical Services LLC. All rights or warranties reserved.</p>
+          <p>© {currentYear} Shahin Alam Technical Services L.L.C. Trade License 1283230. All rights reserved.</p>
           <div className="flex gap-4">
-            <span className="hover:text-slate-400">SLA Policies</span>
+            <span className="hover:text-slate-400">DED Approved SLA</span>
             <span>•</span>
-            <span className="hover:text-slate-400">AED Tariff Card</span>
+            <span className="hover:text-slate-400">Commercial Tariff Card</span>
           </div>
         </div>
       </div>

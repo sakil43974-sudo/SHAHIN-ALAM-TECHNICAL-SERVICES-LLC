@@ -2,6 +2,9 @@ import { motion } from 'motion/react';
 import { Shield, Sparkles, Clock, MapPin, Award, CheckCircle } from 'lucide-react';
 import { OFFICE_CONTACTS } from '../data';
 
+// @ts-ignore
+import imgTechnician3d from '../assets/images/hvac_technician_3d_1779275740350.png';
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 lg:py-28 relative overflow-hidden bg-gradient-to-b from-[#020617] to-[#0b1329]">
@@ -30,7 +33,7 @@ export default function AboutSection() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-display font-medium tracking-tight text-white leading-[1.12]"
           >
-            Pioneering Elite <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#cbd5e1] to-[#00f0ff]">HVAC Maintenance</span> & Engineering in the UAE
+            Pioneering Elite <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#cbd5e1] to-[#00f0ff]">Technical & Maintenance</span> Services in Dubai
           </motion.h2>
 
           <motion.p 
@@ -40,7 +43,7 @@ export default function AboutSection() {
             transition={{ delay: 0.2 }}
             className="text-sm md:text-base text-slate-400 leading-relaxed max-w-2xl"
           >
-            At Shahin Alam Technical Services LLC, we combine rigorous Dubai-standard technical expertise with modern, hyper-efficient cooling technologies. Our dedicated team of mechanical technicians delivers state-of-the-art diagnostics, silent thermal management, and robust AC system installation services designed to endure the demanding GCC climate.
+            At Shahin Alam Technical Services L.L.C, we combine rigorous Dubai-standard engineering expertise with multi-disciplinary maintenance capabilities. Officially licensed by the Department of Economy and Tourism (DET), our certified team delivers premium, high-efficiency solutions in HVAC, Swimming Pools, Carpentry, Painting, Plumbing, False Ceilings, and Tiling across the UAE.
           </motion.p>
 
           <motion.div 
@@ -57,7 +60,7 @@ export default function AboutSection() {
               </div>
               <div className="text-left">
                 <h4 className="text-xs font-display font-bold text-slate-200">24/7 Rapid Priority Dispatch</h4>
-                <p className="text-[11px] text-slate-500 leading-relaxed mt-0.5">Whenever your system experiences faults, our localized emergency response teams land in 60 minutes.</p>
+                <p className="text-[11px] text-slate-500 leading-relaxed mt-0.5">Whenever mechanical, plumbing, or AC faults occur, our emergency response teams reach your doorstep in under 60 minutes.</p>
               </div>
             </div>
 
@@ -66,8 +69,62 @@ export default function AboutSection() {
                 <Award className="w-4 h-4" />
               </div>
               <div className="text-left">
-                <h4 className="text-xs font-display font-bold text-slate-200">Certified HVAC Engineers</h4>
-                <p className="text-[11px] text-slate-500 leading-relaxed mt-0.5">All staff are officially trained in modern VRF/VRV central inverter, split-units, and high-pressure ducting.</p>
+                <h4 className="text-xs font-display font-bold text-slate-200">Certified Technical Experts</h4>
+                <p className="text-[11px] text-slate-500 leading-relaxed mt-0.5">All staff are officially trained, vetted, and equipped with precision instruments to execute heavy maintenance to perfection.</p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Dubai DET Commercial License Verification Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.35 }}
+            className="mt-4 p-5 rounded-2xl bg-gradient-to-r from-slate-950 to-slate-900/80 border border-amber-500/20 shadow-[0_4px_30px_rgba(245,158,11,0.03)] text-left relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-2xl pointer-events-none" />
+            
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-amber-500/10 rounded-xl text-amber-400 border border-amber-500/20 flex-shrink-0">
+                <Shield className="w-6 h-6" />
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h4 className="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase">
+                    DUBAI COMMERCIAL TRADE LICENSE
+                  </h4>
+                  <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[9px] font-mono font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    ACTIVE & VERIFIED (مفعل)
+                  </span>
+                </div>
+                
+                <h3 className="text-base font-display font-bold text-slate-200 mt-1">
+                  SHAHIN ALAM TECHNICAL SERVICES L.L.C
+                </h3>
+                <p className="text-[11px] font-mono text-slate-400 mt-0.5">
+                  شاهين علم للخدمات الفنية ش.ذ.م.ম (Limited Liability Company)
+                </p>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-y-3 gap-x-4 mt-4 pt-3 border-t border-slate-800/80 text-[11px]">
+                  <div>
+                    <span className="text-slate-500 block text-[9px] uppercase font-mono">License Number</span>
+                    <span className="font-mono text-slate-200 font-bold">1283230</span>
+                  </div>
+                  <div>
+                    <span className="text-slate-500 block text-[9px] uppercase font-mono">DCCI Registration</span>
+                    <span className="font-mono text-slate-200 font-bold">691917</span>
+                  </div>
+                  <div>
+                    <span className="text-slate-500 block text-[9px] uppercase font-mono">Authorized Manager</span>
+                    <span className="text-slate-200 font-medium font-display">Shahin Alam Mohammad Ali</span>
+                  </div>
+                  <div>
+                    <span className="text-slate-500 block text-[9px] uppercase font-mono">Governing Authority</span>
+                    <span className="text-slate-300 font-medium">Dubai DED / DET</span>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -113,7 +170,7 @@ export default function AboutSection() {
             {/* Interactive technician image */}
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-slate-950/80 group">
               <img 
-                src="/src/assets/images/hvac_technician_3d_1779275740350.png" 
+                src={imgTechnician3d} 
                 alt="HVAC technician servicing dynamic AC systems" 
                 className="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105 pointer-events-none"
                 referrerPolicy="no-referrer"

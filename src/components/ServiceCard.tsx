@@ -37,11 +37,10 @@ function Isometric3DShape({ iconName, stateIsHovered }: { iconName: string; stat
             boxShadow: stateIsHovered ? '0 0 20px rgba(0, 240, 255, 0.4)' : 'none',
           }}
         >
-          {iconName === 'Wrench' && <LucideIcons.Wrench className="w-6 h-6 text-[#00f0ff]" />}
-          {iconName === 'ShieldCheck' && <LucideIcons.ShieldCheck className="w-6 h-6 text-[#00f0ff]" />}
-          {iconName === 'Cpu' && <LucideIcons.Cpu className="w-6 h-6 text-[#00f0ff]" />}
-          {iconName === 'Wind' && <Wind className="w-6 h-6 text-[#00f0ff]" />}
-          {iconName === 'Building2' && <LucideIcons.Building2 className="w-6 h-6 text-[#00f0ff]" />}
+          {(() => {
+            const IconComponent = (LucideIcons as any)[iconName] || LucideIcons.Wrench;
+            return <IconComponent className="w-6 h-6 text-[#00f0ff]" />;
+          })()}
         </div>
 
         {/* Dynamic Fan blades spinning deep inside the 3D grid backplate */}

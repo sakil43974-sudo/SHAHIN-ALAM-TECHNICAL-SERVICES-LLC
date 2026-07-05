@@ -2,74 +2,130 @@ import { ServiceDetail } from './types';
 
 export const SERVICES: ServiceDetail[] = [
   {
-    id: 'ac-install',
-    title: 'AC Installation',
-    description: 'Bespoke high-efficiency AC system design, load calculation, and gold-standard implementation for villas, penthouses, and commercial units across the UAE.',
+    id: 'hvac-filtration',
+    title: 'Air-Conditioning, Ventilation & Air Filtration',
+    description: 'Expert installation, deep chemical disinfection, and preventative maintenance of all HVAC types, from split/ducted units to commercial multi-zone VRF/VRV central systems.',
     benefits: [
-      'Accurate BTUs load matching calculations',
-      'Anti-vibration high-durability brackets',
-      '5-Year extended compressor warranty support',
-      'Pristine interior finish and clean routing'
-    ],
-    iconName: 'Wrench',
-    flowRate: 'Ultra-Quiet Fan Flow',
-    averagePrice: 'From AED 1,200'
-  },
-  {
-    id: 'ac-maintenance',
-    title: 'AC Maintenance',
-    description: 'Proactive deep coil chemical cleaning, filter disinfection, pressure tuning, and system optimization to safeguard air purity and significantly reduce electricity bills.',
-    benefits: [
-      'Chemical-flush deep coil sanitation',
-      'Refrigerant pressure level balancing',
-      'Drain line flush to prevent water leaks',
-      'Multi-point diagnostic checklist check'
-    ],
-    iconName: 'ShieldCheck',
-    flowRate: 'Optimized Energy Flow',
-    averagePrice: 'From AED 250'
-  },
-  {
-    id: 'ac-repair',
-    title: 'AC Repair',
-    description: 'Rapid-response 24/7 HVAC diagnostic, emergency compressor repair, capacitor replacement, leak seals, and certified electrical repairs with genuine spare parts.',
-    benefits: [
-      '60-Minute rapid arrival guarantee',
-      'Highly calibrated diagnostic instrumentation',
-      '100% original manufacturer OEM parts',
-      'Post-repair cooling testing certificate'
-    ],
-    iconName: 'Cpu',
-    flowRate: 'Instant Ice-Cold Revival',
-    averagePrice: 'Diagnostic from AED 150'
-  },
-  {
-    id: 'ac-ductwork',
-    title: 'Ductwork Solutions',
-    description: 'High-end interior duct system vacuuming, sanitization, customized sheet metal structural fabrication, thermal insulation wrapping, and pressure-balanced air balancing.',
-    benefits: [
-      'Video camera duct interior inspection',
-      'Hospital-grade sanitizing mist treatment',
-      'High-performance fiberglass duct wrapping',
-      '消除 air leakage for perfect cooling'
+      'Precision load calculation & custom duct layout',
+      'Antibacterial deep coil chemical foam washing',
+      'Eco-friendly refrigerant recovery & pressure tuning',
+      'High-durability copper welding & pipe leak sealing'
     ],
     iconName: 'Wind',
-    flowRate: 'Primal Air Purification',
+    flowRate: 'Optimal Air Purity Flow',
+    averagePrice: 'From AED 150'
+  },
+  {
+    id: 'swimming-pools',
+    title: 'Swimming Pools Installation Works',
+    description: 'Comprehensive design, plumbing, tile layout, filtration system setup, and structural maintenance for luxury swimming pools in private villas and residential complexes.',
+    benefits: [
+      'High-efficiency filter and water pump integration',
+      'Precision structural waterproofing & plumbing layout',
+      'Pristine mosaic tiling and grout restoration',
+      'Smart automation of pool lighting & chemical control'
+    ],
+    iconName: 'Waves',
+    flowRate: 'Crystal-Clear Hydrology',
     averagePrice: 'Customized Quote'
   },
   {
-    id: 'commercial-tech',
-    title: 'Commercial Services',
-    description: 'Heavy enterprise cooling engineering, VRF/VRV central system maintenance, chilling tower diagnostics, and complex contract technical support for office blocks and warehouses.',
+    id: 'sanitary-plumbing',
+    title: 'Sanitary Installation & Pipes Repairing',
+    description: 'Gold-standard plumbing repairs, high-pressure water pump stations, drain lines clearing, and complete leak diagnostic assessments for residential and commercial spaces.',
     benefits: [
-      'Dedicated corporate technical engineer assigned',
-      'Comprehensive custom SLA support',
-      'Zero operational disruption maintenance windows',
-      'Asset performance logging lifecycle dashboard'
+      'Calibrated thermal-imaging leak diagnosis',
+      'Professional PPR, PEX, and copper pipe installations',
+      'Rapid-response drainage block clearance',
+      'Pristine bathroom & kitchen fixture setups'
     ],
-    iconName: 'Building2',
-    flowRate: 'Industrial Grade Heavy Output',
-    averagePrice: 'Corporate Agreement'
+    iconName: 'Droplet',
+    flowRate: 'Balanced Hydraulic Flow',
+    averagePrice: 'From AED 120'
+  },
+  {
+    id: 'carpentry-flooring',
+    title: 'Carpentry & Wood Flooring Works',
+    description: 'Premium wooden flooring parquet layout, custom wardrobe cabinetry, wooden door installations, and master-craft carpentry repair of fine timber finishes.',
+    benefits: [
+      'Flawless alignment of luxury wooden parquet',
+      'Bespoke kitchen cabinet & wardrobe designs',
+      'Accurate door sizing, framing, & hinge balancing',
+      'Moisture-resistant underlayment protective barrier'
+    ],
+    iconName: 'Hammer',
+    flowRate: 'Timeless Timber Artistry',
+    averagePrice: 'From AED 250'
+  },
+  {
+    id: 'painting-contracting',
+    title: 'Painting Contracting',
+    description: 'Interior and exterior painting services using weather-resistant, non-toxic, eco-safe coatings. Providing texture finishes, accent walls, and precise multi-coat protective finishes.',
+    benefits: [
+      'Precision multi-coat primer and smooth finishing',
+      'High-durability weather-resistant outdoor paint',
+      'Elegant textured finishes and decorative coatings',
+      'Meticulous masking, clean edges & zero-spill policy'
+    ],
+    iconName: 'Paintbrush',
+    flowRate: 'Vivid Surface Preservation',
+    averagePrice: 'From AED 300'
+  },
+  {
+    id: 'tiling-works',
+    title: 'Floor & Wall Tiling Works',
+    description: 'Professional layout of fine ceramics, porcelain slabs, granite slabs, and luxury marble for bathrooms, kitchens, lobbies, and swimming pool surrounding areas.',
+    benefits: [
+      'Laser-aligned floor & wall joint leveling',
+      'High-bonding polymer adhesive application',
+      'Waterproof sealing of sanitary wet areas',
+      'Precision cutting around fixtures & corners'
+    ],
+    iconName: 'Grid',
+    flowRate: 'Flawless Joint Alignment',
+    averagePrice: 'From AED 150'
+  },
+  {
+    id: 'false-ceiling',
+    title: 'False Ceiling & Light Partitions Installation',
+    description: 'Aesthetic gypsum board ceilings, acoustic grid tiles, lightweight drywalls for commercial divisions, and custom recessed led profile slots implementation.',
+    benefits: [
+      'Reinforced steel suspension framework grids',
+      'Modern ambient lighting slots & linear diffuser cuts',
+      'Acoustic soundproofing partition layers',
+      'Smooth joint compounding & paint-ready finishing'
+    ],
+    iconName: 'Layers',
+    flowRate: 'Architectural Dimensioning',
+    averagePrice: 'Customized Quote'
+  },
+  {
+    id: 'plaster-works',
+    title: 'Plaster Works',
+    description: 'High-quality wall cement plastering, surface smoothing, concrete screeding, and wall leveling preparations to achieve structurally solid, pristine surface templates.',
+    benefits: [
+      'Precise corner bead alignment and crack repairs',
+      'Multi-coat thermal & acoustic backing options',
+      'Laser-guided flat floor screeding systems',
+      'Flawless texture leveling prior to painting'
+    ],
+    iconName: 'Sparkles',
+    flowRate: 'Solid Structural Prep',
+    averagePrice: 'From AED 100'
+  },
+  {
+    id: 'wallpaper-fixing',
+    title: 'Wallpaper Fixing Works',
+    description: 'Seamless alignment, bubble-free adhesion, and pattern matching for luxury textured, vinyl, and high-end photographic fabric wallpapers.',
+    benefits: [
+      'Perfect pattern matching & seam integration',
+      'Non-staining specialty adhesive formula',
+      'Meticulous surface pre-cleaning & priming',
+      'Accurate corner cuts and fixture trim fittings'
+    ],
+    iconName: 'FileText',
+    flowRate: 'Seamless Aesthetic Wraps',
+    averagePrice: 'From AED 200'
   }
 ];
 

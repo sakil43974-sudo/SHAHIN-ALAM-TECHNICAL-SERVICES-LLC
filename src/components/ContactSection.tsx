@@ -17,7 +17,7 @@ export default function ContactSection({ customPreloadedService, onClearPreloade
   const [formName, setFormName] = useState('');
   const [formPhone, setFormPhone] = useState('');
   const [formEmail, setFormEmail] = useState('');
-  const [formService, setFormService] = useState('AC Maintenance');
+  const [formService, setFormService] = useState('Air-Conditioning, Ventilation & Air Filtration');
   const [formDate, setFormDate] = useState('');
   const [formTimeSlot, setFormTimeSlot] = useState('Morning (08:00 AM - 12:00 PM)');
   const [formNotes, setFormNotes] = useState('');
@@ -116,11 +116,11 @@ export default function ContactSection({ customPreloadedService, onClearPreloade
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-medium text-white tracking-tight leading-[1.12]">
-            Book Your Premium <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-400 to-[#00f0ff]">HVAC Service</span>
+            Book Your Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-400 to-[#00f0ff]">Technical Service</span>
           </h2>
 
           <p className="text-sm text-slate-400 max-w-xl leading-relaxed">
-            Submit your cooling challenges down below. Secure a prioritized arrival slot instantly with our local dispatchers in UAE.
+            Submit your maintenance or technical challenges below. Secure a prioritized arrival slot instantly with our certified dispatchers in Dubai.
           </p>
         </div>
 
@@ -307,17 +307,21 @@ export default function ContactSection({ customPreloadedService, onClearPreloade
                       {/* Selectable services dropdown */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="flex flex-col gap-1.5">
-                          <label className="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Select HVAC Service</label>
+                          <label className="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Select Licensed Service</label>
                           <select
                             value={formService}
                             onChange={(e) => setFormService(e.target.value)}
                             className="bg-[#090d16] hover:bg-slate-950 border border-slate-800 focus:border-[#00f0ff] rounded-xl px-4 py-3 text-sm text-slate-300 outline-none transition-colors w-full cursor-pointer"
                           >
-                            <option>AC Installation</option>
-                            <option>AC Maintenance</option>
-                            <option>AC Repair</option>
-                            <option>Ductwork Solutions</option>
-                            <option>Commercial Technical Services</option>
+                            <option>Air-Conditioning, Ventilation & Air Filtration</option>
+                            <option>Swimming Pools Installation Works</option>
+                            <option>Sanitary Installation & Pipes Repairing</option>
+                            <option>Carpentry & Wood Flooring Works</option>
+                            <option>Painting Contracting</option>
+                            <option>Floor & Wall Tiling Works</option>
+                            <option>False Ceiling & Light Partitions Installation</option>
+                            <option>Plaster Works</option>
+                            <option>Wallpaper Fixing Works</option>
                           </select>
                         </div>
 
@@ -358,12 +362,11 @@ export default function ContactSection({ customPreloadedService, onClearPreloade
                         </div>
                       </div>
 
-                      {/* Notes / Special Instructions */}
-                      <div className="flex flex-col gap-1.5">
-                        <label className="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Special Notes or AC Unit Model details</label>
-                        <textarea
-                          rows={3}
-                          placeholder="e.g. Water dripping from indoor master bedroom unit after eco power setting is enabled..."
+                          <div className="flex flex-col gap-1.5">
+                            <label className="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Special Notes or Project Details</label>
+                            <textarea
+                              rows={3}
+                              placeholder="e.g. Need wood parquet flooring for a 3-bedroom villa in Palm Jumeirah..."
                           value={formNotes}
                           onChange={(e) => setFormNotes(e.target.value)}
                           className="bg-slate-950/60 hover:bg-slate-950 focus:bg-slate-950 border border-slate-800 focus:border-[#00f0ff] rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 outline-none transition-colors w-full resize-none"
@@ -395,7 +398,7 @@ export default function ContactSection({ customPreloadedService, onClearPreloade
                           </div>
                           <h4 className="text-xl font-display font-bold text-white">Booking Slot Registered!</h4>
                           <p className="text-sm text-slate-400 max-w-sm mt-2 leading-relaxed">
-                            Your service dispatch slot has been secured. Our HVAC supervisor will call you on your phone within 15 minutes.
+                            Your service dispatch slot has been secured. Our technical operations supervisor will call you on your phone within 15 minutes.
                           </p>
                           <span className="text-[11px] font-mono text-[#00f0ff] mt-4 uppercase tracking-widest bg-[#00f0ff]/10 px-2.5 py-1 rounded">
                             GENERATING DISPATCH TICKET...
@@ -418,7 +421,7 @@ export default function ContactSection({ customPreloadedService, onClearPreloade
                   >
                     <div className="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
                       <div>
-                        <h4 className="text-base font-display font-bold text-white">Your Registered Air Tickets</h4>
+                        <h4 className="text-base font-display font-bold text-white">Your Registered Service Tickets</h4>
                         <p className="text-xs text-slate-500">Local live client action pipeline</p>
                       </div>
 

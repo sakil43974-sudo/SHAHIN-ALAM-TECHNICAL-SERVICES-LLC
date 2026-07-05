@@ -2,6 +2,24 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Eye, X, ZoomIn, ArrowRight } from 'lucide-react';
 
+// Import local on-site HVAC images
+// @ts-ignore
+import imgManifoldValves from '../assets/images/hvac_manifold_valves_1783261540287.jpg';
+// @ts-ignore
+import imgChemicalCleaning from '../assets/images/hvac_chemical_cleaning_1783261554051.jpg';
+// @ts-ignore
+import imgRooftopDucts from '../assets/images/hvac_rooftop_ducts_1783261566665.jpg';
+// @ts-ignore
+import imgCassetteInstall from '../assets/images/hvac_cassette_install_1783261583413.jpg';
+// @ts-ignore
+import imgCondenserRepair from '../assets/images/hvac_condenser_repair_1783261601293.jpg';
+// @ts-ignore
+import imgWaterPumpSystem from '../assets/images/hvac_water_pump_system_1783261613190.jpg';
+// @ts-ignore
+import imgDuctCladding from '../assets/images/hvac_duct_cladding_1783261625276.jpg';
+// @ts-ignore
+import imgIndoorAcWash from '../assets/images/hvac_indoor_ac_wash_1783261638145.jpg';
+
 interface GalleryItem {
   id: string;
   title: string;
@@ -13,45 +31,59 @@ interface GalleryItem {
 const GALLERY_IMAGES: GalleryItem[] = [
   {
     id: 'g1',
-    title: 'Industrial Chiller Overhaul',
+    title: 'Water Pump Booster Station',
     category: 'chiller',
-    imageUrl: 'https://images.unsplash.com/photo-1581094288338-2314dddb7eed?auto=format&fit=crop&w=800&q=80',
-    description: 'Compressor rebuilding and mechanical pressure testing for commercial chiller plant.'
+    imageUrl: imgWaterPumpSystem,
+    description: 'Installation and plumbing of high-efficiency water booster pump system with integrated pressure gauge controls.'
   },
   {
     id: 'g2',
-    title: 'Precision AC Installation',
+    title: 'Ceiling Cassette AC Installation',
     category: 'ac-install',
-    imageUrl: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80',
-    description: 'Wall-mounted split AC unit alignment and copper pipe routing in luxury apartment.'
+    imageUrl: imgCassetteInstall,
+    description: 'Professional layout, wiring, and flush installation of a multi-directional ceiling cassette AC unit.'
   },
   {
     id: 'g3',
-    title: 'Central HVAC Ductwork',
+    title: 'Rooftop Insulated Air Ducts',
     category: 'ductwork',
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
-    description: 'Double-insulated sheet metal duct fabrication and ventilation air balancing.'
+    imageUrl: imgRooftopDucts,
+    description: 'High-performance double-insulated rectangular HVAC ducts routed across a commercial rooftop.'
   },
   {
     id: 'g4',
-    title: 'Refrigerant Line Welding',
+    title: 'Evaporator Deep Chemical Wash',
     category: 'repair',
-    imageUrl: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
-    description: 'High-temperature copper welding and nitrogen pressure leak-testing.'
+    imageUrl: imgChemicalCleaning,
+    description: 'Active chemical foaming spray application on indoor evaporator cooling coils to dissolve dirt and restore airflow.'
   },
   {
     id: 'g5',
-    title: 'AC Electrical Diagnostics',
+    title: 'Condenser Electrical Repair',
     category: 'repair',
-    imageUrl: 'https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&w=800&q=80',
-    description: 'Calibrated multimeter capacitor and contractor controls testing.'
+    imageUrl: imgCondenserRepair,
+    description: 'Comprehensive electrical diagnostics and component repair on outdoor condenser circuit boards.'
   },
   {
     id: 'g6',
-    title: 'VRF Condenser Layout',
-    category: 'ac-install',
-    imageUrl: 'https://images.unsplash.com/photo-1558441719-ff34b0524a24?auto=format&fit=crop&w=800&q=80',
-    description: 'High-capacity multi-zone outdoor inverter condenser system installation.'
+    title: 'Heavy Duty Valves & Manifold',
+    category: 'chiller',
+    imageUrl: imgManifoldValves,
+    description: 'High-durability plumbing manifold with pressure testing gauges and brass liquid regulation valves.'
+  },
+  {
+    id: 'g7',
+    title: 'Rooftop Duct Cladding Work',
+    category: 'ductwork',
+    imageUrl: imgDuctCladding,
+    description: 'Applying custom protective aluminum sheet metal cladding insulation to large outdoor air distribution ducts.'
+  },
+  {
+    id: 'g8',
+    title: 'Split AC Deep Pressure Wash',
+    category: 'repair',
+    imageUrl: imgIndoorAcWash,
+    description: 'High-pressure internal sanitization of wall-mounted split AC unit utilizing a specialized water-catch jacket.'
   }
 ];
 
