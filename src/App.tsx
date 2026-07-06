@@ -324,11 +324,11 @@ export default function App() {
 
       </section>
 
-      {/* 3. ABOUT SECTION (HVAC Engineers, Technical values) */}
-      <AboutSection />
-
-      {/* 4. SERVICES CATALOGUE SECTION (AC Installation, AC Maintenance, AC Repair, Ductwork, Commercial) */}
+      {/* 3. SERVICES CATALOGUE SECTION (AC Installation, AC Maintenance, AC Repair, Ductwork, Commercial) */}
       <ServicesSection onBookClick={handleTriggerBooking} />
+
+      {/* 4. ABOUT SECTION (HVAC Engineers, Technical values) */}
+      <AboutSection />
 
       {/* 5. WHY CHOOSE US (Counting values panel) */}
       <WhyChooseUs />
